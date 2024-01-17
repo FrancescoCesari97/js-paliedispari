@@ -5,12 +5,9 @@
 //- verificare se le parole sono ugali se si stamapre palindroma se no stampare non palindroma
 
 function askWord() {
-  //- chiedere con un prompt di inserire una parola
-  let userWord = prompt("scrivi una parola");
-
   //- invertire la parola con un ciclo for
   let reverseWord = "";
-  for (let i = userWord.length; i >= 0; i--) {
+  for (let i = userWord.length - 1; i >= 0; i--) {
     reverseWord += userWord[i];
   }
 
